@@ -1,4 +1,4 @@
-# Matematik TYT
+# Matematik
 
 Matematik çalışmam
 
