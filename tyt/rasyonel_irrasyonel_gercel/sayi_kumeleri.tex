@@ -1,0 +1,108 @@
+% MIT License
+% 
+% Copyright (c) 2026-2027 Mass Collaboration Labs
+% 
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+% 
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
+% 
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+% SOFTWARE.
+
+\documentclass{article}
+\usepackage[T1]{fontenc} % Doğru font kodlaması için
+\usepackage[utf8]{inputenc}
+\usepackage[turkish]{babel}
+\usepackage{amsmath}    % Gelişmiş matematiksel semboller ve hizalamalar için
+\usepackage{amsfonts}   % \mathbb{Q}, \mathbb{R} gibi küme sembolleri için
+\usepackage{booktabs}   % Şık ve profesyonel tablolar oluşturmak için
+\usepackage{tabularx}   % Tablo genişliğini otomatik ayarlamak ve taşmaları önlemek için
+\usepackage{lmodern}    % Vektörel ve yüksek kaliteli font yapısı için
+\usepackage[a4paper, margin=1in]{geometry} % Sayfa kenar boşluklarını optimize etmek için
+
+\title{Temel Sayı Kümeleri ve Özellikleri}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+Matematikte sayıların sınıflandırılması, sayı doğrusundaki tüm değerlerin yapısını ve birbirleriyle olan ilişkilerini anlamamızı sağlar. Bu dökümanda rasyonel, irrasyonel ve gerçel sayı kümeleri detaylı olarak incelenmiştir.
+
+\section{Rasyonel Sayılar}
+İki tam sayının birbirine oranı (kesir) şeklinde ifade edilebilen tüm sayılara \textbf{rasyonel sayılar} denir.
+
+\begin{itemize}
+    \item \textbf{Sembolü:} $\mathbb{Q}$ karakteriyle gösterilir. Bu sembol, İtalyanca oran veya bölüm anlamına gelen \textit{"Quoziente"} kelimesinden gelmektedir.
+    \item \textbf{Matematiksel Tanımı:} $a$ ve $b$ birer tam sayı olmak üzere, payda asla sıfır olmamak şartıyla ($b \neq 0$), $\frac{a}{b}$ biçiminde yazılabilen kümelerdir:
+    \begin{equation*}
+        \mathbb{Q} = \left\{ \frac{a}{b} \ \middle|\ a, b \in \mathbb{Z} \text{ ve } b \neq 0 \right\}
+    \end{equation*}
+    \item \textbf{Detaylı Açıklama:} 
+    \begin{itemize}
+        \item Her tam sayı, gizli paydası $1$ olan bir rasyonel sayıdır (Örn: $-8 = \frac{-8}{1}$, $0 = \frac{0}{1}$).
+        \item Ondalıklı sayılar sonlu basamaklı ise rasyoneldir (Örn: $0.25 = \frac{1}{4}$).
+        \item Virgülden sonrası sonsuza giden ancak belirli bir düzende tekrar eden devirli ondalıklı sayılar da rasyoneldir (Örn: $0.333\dots = \frac{1}{3}$).
+    \end{itemize}
+\end{itemize}
+
+\section{İrrasyonel Sayılar}
+İki tam sayının birbirine oranı ($\frac{a}{b}$) şeklinde \textbf{yazılamayan} sayılara \textbf{irrasyonel sayılar} denir. Rasyonel olmayan sayıları temsil eder.
+
+\begin{itemize}
+    \item \textbf{Sembolü:} $\mathbb{Q}'$ veya $\mathbb{I}$ şeklinde gösterilir. Yaygın olarak rasyonel sayılar kümesinin tümleyeni anlamındaki $\mathbb{Q}'$ sembolü tercih edilir.
+    \item \textbf{Detaylı Açıklama:} Bu sayıların virgülden sonraki basamakları herhangi bir periyodik düzene uymadan, tamamen düzensiz ve öngörülemez bir şekilde sonsuza kadar devam eder.
+    \begin{itemize}
+        \item Kök dışına tam sayı olarak çıkamayan tüm köklü ifadeler irrasyoneldir. Örneğin; $\sqrt{2} \approx 1.414213\dots$, $\sqrt{3}$ ve $\sqrt{5}$ bu kümenin elemanıdır.
+        \item Evrensel matematiksel sabitler bu kümededir (Pi sayısı: $\pi \approx 3.141592\dots$ ve Euler sabiti: $e \approx 2.718281\dots$).
+    \end{itemize}
+\end{itemize}
+
+\section{Gerçel (Reel / Gerçek) Sayılar}
+Rasyonel sayılar ile irrasyonel sayılar kümelerinin birleşmesiyle oluşan, sayı doğrusundaki tüm noktaları boşluksuz olarak tamamen dolduran en geniş temel sayı kümesine \textbf{gerçel sayılar} denir.
+
+\begin{itemize}
+    \item \textbf{Sembolü:} İngilizce gerçek anlamına gelen \textit{"Real"} kelimesinin baş harfi olan $\mathbb{R}$ sembolü ile gösterilir.
+    \item \textbf{Matematiksel Tanımı:} Rasyonel ve irrasyonel kümelerinin birleşimidir:
+    \begin{equation*}
+        \mathbb{R} = \mathbb{Q} \cup \mathbb{Q}'
+    \end{equation_*}
+    \item \textbf{Detaylı Açıklama:} Sayı doğrusu üzerinde koordinat olarak gösterebileceğiniz her bir nokta istisnasız bir gerçel sayıdır. Doğal sayılar, tam sayılar, kesirler, ondalıklılar, köklü ifadeler ve transandantal sabitlerin ($\pi, e$) tümü bu devasa kümenin birer elemanıdır.
+\end{itemize}
+
+\newpage
+\section{Özet Karşılaştırma Tablosu}
+
+Aşağıdaki tablo, üç temel sayı kümesinin yapısal farklarını ve virgülden sonraki davranışlarını özetlemektedir:
+
+\begin{table}[h!]
+\centering
+\caption{Sayı Kümelerinin Karşılaştırma Matrisi}
+\vspace{0.2cm}
+\begin{tabularx}{\textwidth}{lcXXX}
+\toprule
+\textbf{Sayı Kümesi} & \textbf{Sembolü} & \textbf{Temel Formülü} & \textbf{Örnekler} & \textbf{Virgülden Sonrası} \\ \midrule
+Rasyonel & $\mathbb{Q}$ & $\frac{a}{b}$ olarak yazılır & $-3$, $0$, $\frac{2}{5}$, $0.75$, $0.444\dots$ & Sonlu veya devirlidir \\ \addlinespace
+İrrasyonel & $\mathbb{Q}'$ & $\frac{a}{b}$ olarak yazılamaz & $\sqrt{2}$, $\pi$, $e$, $\sqrt{7}$ & Sonsuz ve düzensizdir \\ \addlinespace
+Gerçel & $\mathbb{R}$ & $\mathbb{Q} \cup \mathbb{Q}'$ & Tüm üstteki sayılar & Her iki durumu da kapsar \\ \bottomrule
+\end{tabularx}
+\end{table}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: LaTeX
+%%% TeX-master: t
+%%% End:
