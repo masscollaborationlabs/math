@@ -1,0 +1,43 @@
+# a'nın alabileceği değerleri tutacak liste
+degerler_a = []
+
+# Geniş bir aralıkta a değerlerini test edelim
+for a in range(-1000, 1000):
+    # Paydaların sıfır olma durumunu kontrol edelim (Tanımsızlığı önlemek için)
+    if (a - 3 == 0) or (2 * a + 15 == 0):
+        continue
+    
+    pay = 2 * a + 15
+    payda = a - 3
+    
+    # x ve y'nin tam sayı olması için kalanların 0 olması gerekir
+    # (Hem pay paydaya tam bölünmeli, hem de payda paya tam bölünmeli)
+    if (pay % payda == 0) and (payda % pay == 0):
+        degerler_a.append(a)
+
+# Sonuçları ekrana yazdırma
+toplam_a = sum(degerler_a)
+print(f"a'nın alabileceği değerler: {degerler_a}")
+print(f"a'nın alabileceği değerlerin toplamı: {toplam_a}")
+
+ile 
+
+def solve():
+    valid_a = []
+    # We can check a broad range of a to confirm
+    for a in range(-1000, 1000):
+        if a - 3 == 0 or 2*a + 15 == 0:
+            continue
+        num1 = 2*a + 15
+        den1 = a - 3
+        num2 = a - 3
+        den2 = 2*a + 15
+        
+        if num1 % den1 == 0 and num2 % den2 == 0:
+            valid_a.append(a)
+    print("Valid a values:", valid_a)
+    print("Sum of a:", sum(valid_a))
+
+solve()
+
+arasındaki fark nedir ?
